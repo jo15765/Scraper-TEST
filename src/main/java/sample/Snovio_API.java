@@ -21,13 +21,9 @@ import com.google.gson.Gson;
 
 public class Snovio_API {
 
-//    private final static String API_USER_ID = "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
-//    private final static String API_SECRET = "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
-    private final static String API_USER_ID = "0d2d8575327db2f14bf616a2c5aa7ffc";
-    private final static String API_SECRET = "e69d6c57e82f0e7a7d98af2414408a9d";
+    private final static String API_USER_ID = "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
+    private final static String API_SECRET = "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
 
-
-    //These methods are working
     public String getAccessToken() {
         try {
             Map<String, String> parameters = new HashMap<>();
