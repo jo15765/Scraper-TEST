@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import org.controlsfx.control.CheckListView?>
+
+<AnchorPane prefHeight="456.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Snovio">
+    <children>
+        <org.controlsfx.control.CheckListView fx:id="listView" layoutX="21.0" layoutY="145.0" prefHeight="300" prefWidth="350" />
+        <Button layoutX="21.0" layoutY="109.0" mnemonicParsing="false" onAction="#CheckAll" prefHeight="27.0" prefWidth="123.0" text="Check All" />
+        <Button layoutX="248.0" layoutY="109.0" mnemonicParsing="false" onAction="#UncheckAll" prefHeight="27.0" prefWidth="123.0" text="Uncheck All" />
+        <Button fx:id="btnGetData" alignment="CENTER" layoutX="431.0" layoutY="156.0" mnemonicParsing="false" onAction="#HitSnovioAPI" prefHeight="27.0" prefWidth="98.0" text="Get Data" wrapText="true" />
+        <!--<Button layoutX="397.0" layoutY="118.0" mnemonicParsing="false" onAction="#GetCountOfEmailsForSelectedDomains" prefHeight="54.0" prefWidth="123.0" text="Get Email Count For Selected" wrapText="true" />
+        <Button layoutX="397.0" layoutY="181.0" mnemonicParsing="false" onAction="#GetEmailAddresses" prefHeight="66.0" prefWidth="123.0" text="Get Email Addresses For Selected Domains" textAlignment="CENTER" wrapText="true" />
+        <Button layoutX="397.0" layoutY="260.0" mnemonicParsing="false" onAction="#GetUserInfoFromEmailAddress" prefHeight="44.0" prefWidth="123.0" text="Get User Profile From Email" textAlignment="CENTER" wrapText="true" />-->
+        <Label layoutX="21.0" layoutY="55.0" prefHeight="17.0" prefWidth="176.0" text="Process Selected Domains:" />
+        <ComboBox fx:id="cboDomain" layoutX="21.0" layoutY="72.0" prefHeight="25.0" prefWidth="350.0" />
+        <VBox layoutX="383.0" layoutY="72.0" prefHeight="74.0" prefWidth="209.0" spacing="7.0" style="-fx-border-color: black;;">
+           <children>
+              <CheckBox fx:id="cboxEmailCount" mnemonicParsing="false" text="Get Count Of Emails For Domain" />
+              <CheckBox fx:id="cboxEmailDomain" mnemonicParsing="false" text="Get Email Addresses For Domain" />
+<!--              <CheckBox fx:id="cboxEmailUserInfo" mnemonicParsing="false" text="Get User Info From Email Address" />-->
+           </children>
+        </VBox>
+      <Button alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="27.0" prefWidth="100.0" text="Go Back" wrapText="true" />
+    </children>
+</AnchorPane>
